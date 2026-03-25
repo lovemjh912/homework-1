@@ -8,7 +8,6 @@ def to_3x3(affine_matrix):
     return np.vstack([affine_matrix, [0, 0, 1]])
 
 
-# Function to apply transformations based on user inputs
 def apply_transform(image, scale, rotation, translation_x, translation_y, flip_horizontal):
     if image is None:
         return None
